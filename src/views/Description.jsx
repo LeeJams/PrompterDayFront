@@ -1,4 +1,12 @@
-import { Alert, Box, Button, Chip, Snackbar, Typography } from "@mui/material";
+import {
+  Alert,
+  Box,
+  Button,
+  Chip,
+  Divider,
+  Snackbar,
+  Typography,
+} from "@mui/material";
 import IosShareOutlinedIcon from "@mui/icons-material/IosShareOutlined";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
 import classes from "./Description.module.css";
@@ -107,7 +115,7 @@ export default function Description() {
           </Typography>
           <Box
             sx={{
-              margin: "30px 0",
+              margin: "20px 0",
             }}
           >
             <Swiper spaceBetween={20} slidesPerView={1.3}>
@@ -119,6 +127,18 @@ export default function Description() {
             </Swiper>
           </Box>
           <Typography
+            variant="caption"
+            display="block"
+            sx={{
+              fontSize: "1.4rem",
+              fontWeight: "bold",
+              marginBottom: 2,
+            }}
+          >
+            {data?.mean}
+          </Typography>
+          <Divider />
+          <Typography
             variant="body1"
             gutterBottom
             sx={{
@@ -126,6 +146,7 @@ export default function Description() {
               lineHeight: "1.8",
               fontSize: "1.5rem",
               whiteSpace: "pre-line",
+              marginTop: "20px",
             }}
           >
             {data?.content}
