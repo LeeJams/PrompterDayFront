@@ -5,7 +5,7 @@ import SearchIcon from "@mui/icons-material/SearchOutlined";
 import classes from "./Home.module.css";
 import logo from "../assets/images/logo.svg";
 import { useState } from "react";
-import data from "../utils/mock";
+import mock from "../utils/mock";
 
 const categories = [
   {
@@ -42,7 +42,7 @@ export default function Home() {
     navigator("docs/" + id);
   };
 
-  const keywords = data[tab];
+  const keywords = mock.data[tab];
 
   return (
     <div>
@@ -85,34 +85,46 @@ export default function Home() {
           />
         ))}
       </Box>
-      <div className={classes.speechBubbleOne} onClick={() => moveToDocs(1)}>
-        <Typography variant="h3">{keywords[0]}</Typography>
+      <div
+        className={classes.speechBubbleOne}
+        onClick={() => moveToDocs(keywords[0].page)}
+      >
+        <Typography variant="h3">{keywords[0].title}</Typography>
       </div>
       <div className={classes.middleContainer}>
-        <div className={classes.speechBubbleTwo} onClick={() => moveToDocs(1)}>
-          <Typography variant="h3">{keywords[1]}</Typography>
+        <div
+          className={classes.speechBubbleTwo}
+          onClick={() => moveToDocs(keywords[1].page)}
+        >
+          <Typography variant="h3">{keywords[1].title}</Typography>
         </div>
         <div>
           <div
             className={classes.speechBubbleThree}
-            onClick={() => moveToDocs(1)}
+            onClick={() => moveToDocs(keywords[2].page)}
           >
-            <Typography variant="h3">{keywords[2]}</Typography>
+            <Typography variant="h3">{keywords[2].title}</Typography>
           </div>
           <div
             className={classes.speechBubbleFour}
-            onClick={() => moveToDocs(1)}
+            onClick={() => moveToDocs(keywords[3].page)}
           >
-            <Typography variant="h3">{keywords[3]}</Typography>
+            <Typography variant="h3">{keywords[3].title}</Typography>
           </div>
         </div>
       </div>
       <div className={classes.middleContainer2}>
-        <div className={classes.speechBubbleFive} onClick={() => moveToDocs(1)}>
-          <Typography variant="h3">{keywords[4]}</Typography>
+        <div
+          className={classes.speechBubbleFive}
+          onClick={() => moveToDocs(keywords[4].page)}
+        >
+          <Typography variant="h3">{keywords[4].title}</Typography>
         </div>
-        <div className={classes.speechBubbleSix} onClick={() => moveToDocs(1)}>
-          <Typography variant="h3">{keywords[5]}</Typography>
+        <div
+          className={classes.speechBubbleSix}
+          onClick={() => moveToDocs(keywords[5].page)}
+        >
+          <Typography variant="h3">{keywords[5].title}</Typography>
         </div>
       </div>
     </div>
