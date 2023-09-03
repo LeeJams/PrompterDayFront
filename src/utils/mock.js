@@ -174,11 +174,11 @@ const news = {
     imgs: [
       {
         src: gm,
-        alt: "gm",
+        alt: "금융감독원",
       },
       {
         src: gm2,
-        alt: "gm2",
+        alt: "금융감독원",
       },
     ],
     category: "경제",
@@ -210,11 +210,11 @@ const news = {
     imgs: [
       {
         src: increase,
-        alt: "increase",
+        alt: "연체율",
       },
       {
         src: increase2,
-        alt: "increase2",
+        alt: "연체율",
       },
     ],
     category: "경제",
@@ -232,11 +232,11 @@ const news = {
     imgs: [
       {
         src: po,
-        alt: "po",
+        alt: "오염수",
       },
       {
         src: po2,
-        alt: "po2",
+        alt: "오염수",
       },
     ],
     category: "사회",
@@ -260,11 +260,11 @@ const news = {
     imgs: [
       {
         src: sa,
-        alt: "sa",
+        alt: "나흘",
       },
       {
         src: na,
-        alt: "na",
+        alt: "나흘",
       },
     ],
     category: "생활",
@@ -283,11 +283,11 @@ const news = {
     imgs: [
       {
         src: nation,
-        alt: "nation",
+        alt: "국가 채무",
       },
       {
         src: nation2,
-        alt: "nation2",
+        alt: "국가 채무",
       },
     ],
     category: "경제",
